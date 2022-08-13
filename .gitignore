@@ -5,3 +5,4 @@ data
 *.jpg
 *.zip
 models
+*.h5
