@@ -1,1 +1,11 @@
-# Template for Machine Learning projects
+# Resumen del proceso
+
+Para realizar esta tarea se utilizó para la carga de imágenes el código trabajado en la subsala de Camila Palomeque el día 01/08/22. Se realizó totalmente desde Gitpod ya que localmente no se logró instalar todo lo necesario para poder trabajar (hubo problemas de actualización, posiblemente por utilizar Windows 7).
+Una vez cargadas las imágenes, se reubicaron los archivos utilizando comandos aprendidos en clases anteriores, y se utilizó la librería `split-folders` para realizar la división de las imágenes de "train" en "train" y "test", ya que para entrenar el modelo se necesita una carpeta con imágenes clasificadas para validar.
+Luego se siguió el material teórico proporcionado y la guía de la solución para realizar las siguientes etapas. Se hicieron muchas pruebas, ya que el proceso fallaba y se interrumpía después de varias horas de procesamiento.
+Se cambiaron algunos parámetros para intentar terminar la ejecución, básicamente `epoch` y `steps_per_epoch`, no me animé a cambiar nada en la definición del modelo.
+Para poder ver el resultado probé ejecutar con `epoch=1` y `steps_per_epoch=100`, en ese paso no se logró graficar los resultados pero sí visualizarlos.
+Después logré ejecutarlo para `epoch=4` y `steps_per_epoch=10`. Pero en cada epoch no mejoró el accuracy.
+Se probó el modelo obtenido para predecir algunas imágenes, se observa en todas las pruebas que el modelo predice solamente una categoría (perro). Después se prueba predecir 100 imágenes aleatorias del datset no clasificado (test), donde hay imágenes tanto de perros como de gatos. Nuevamente el modelo predice siempre como perro. Al mirar las imágenes se detecta que efectivamente hay perros y gatos.
+Si bien el accuracy fue bajo, en teoría debería haber clasificado aproximadamente la mitad de las imágenes como perro y la otra mitad como gato, pero eso no sucedió. A pesar de haber identificado este problema con el modelo, no tengo las herramientas para resolverlo, ya que no domino el método y solamente cuento con lo aprendido en clase. Investigar una solución me llevaría mucho tempo, por lo que decido terminarlo así para poder avanzar con las siguientes tareas.
+A futuro intentaré aplicar la solución propuesta por Manuel en la clase del día 10/08/22. 
